@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>74-77</title>
+  <style>
+    .c1 {
+      width: 50px;
+      height: 50px;
+      margin: 100px auto;
+      background-color: #ffffff;
+      border-radius: 50%;
+      border: solid #e91e63 4px;
+      border-left-color: transparent;
+      animation-name: c1;
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      animation-play-state: running;
+    }
+    .c1:hover {
+      animation-play-state: paused;
+    }
+    .c1::after {
+      content:"";
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    margin: -11px -11px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: solid #2196f3 4px;
+    border-top-color: transparent;
+    }
+    .c1::before {
+      content: "";
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    margin: -18px -18px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: solid #ffc107 4px;
+    border-bottom-color: transparent;
+    }
+    @keyframes c1 {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+    .c2 {
+      width: 50px;
+      height: 50px;
+      margin: 200px auto;
+      background-color: #ffffff;
+      border-radius: 50%;
+      border: solid #03a9f4 4px;
+      border-bottom-color: transparent;
+      animation-name: c2;
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      animation-play-state: paused;
+    }
+    .c2:hover {
+      animation-play-state:running;
+    }
+    .c2::after {
+      content:"";
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    margin: -11px -11px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: solid #ff9800 4px;
+    border-bottom-color: transparent;
+    animation-name: c2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-play-state:inherit;
+    }
+    .c2::before {
+      content: "";
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    margin: -18px -18px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: solid #10100f 4px;
+    border-bottom-color: transparent;
+    animation-name: c2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-play-state:inherit;
+    }
+    @keyframes c2 {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+    .c3 {
+      width: 50px;
+      height: 50px;
+      margin: 100px auto;
+      background-color: #9e9e9e54;
+      border-radius: 50%;
+      border: solid #060606 4px;
+      border-left-color: transparent;
+      animation-name: c1;
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      animation-play-state: running;
+      animation-direction: reverse;
+    }
+    .c4 {
+      width: 550px;
+      height: 550px;
+      margin: 100px auto;
+      background-color: #9e9e9e2b;
+      position:relative;
+    }
+    .c4::before {
+      content:"";
+    width: 40px;
+    height: 40px;
+    background-color: #ffc107;
+    position: absolute;
+    left: 320px;
+    top: 390px;
+    z-index: 1;
+    animation: c 5s linear 0s;
+    animation-fill-mode: forwards;
+    opacity:0;
+    }
+  @keyframes c {
+  100% {transform:translate(0px,-340px);opacity:1;}
+  50%{transform:translate(0px,0px);opacity:1;}
+  0%{transform:translate(120px,0px);opacity:1;}
+    }
+    .c4::after {
+      content:"";
+    width: 40px;
+    height: 40px;
+    background-color: #ffc107;
+    position: absolute;
+    left: 233px;
+    top: 48px;
+    animation:b 4s linear 4.2s ;
+  }
+  @keyframes b {
+  10%{transform:translate(-170px,0px)}
+  20%{transform:translate(-170px,170px)}
+  35%{transform:translate(0px,170px)}
+  50%{transform:translate(-170px,170px)}
+  60%{transform:translate(-170px,340px)}
+  70%{transform:translate(0px,340px)}
+  80%{transform:translate(-170px,340px)}
+  90%{transform:translate(-170px,0px)}
+  100%{transform:translate(0px,0px)}
+  }
+    .r1 {
+    width: 60px;
+    height: 350px;
+    background-color: black;
+    position: absolute;
+    left: 310px;
+    top: 40px;
+    }
+    .r2 {
+      width: 180px;
+    height: 60px;
+    background-color: black;
+    position: absolute;
+    left: 310px;
+    bottom: 110px
+    }
+    .r3 {
+    width: 60px;
+    height: 400px;
+    background-color: black;
+    position: absolute;
+    left: 55px;
+    top: 40px;
+    }
+    .r4 {
+    width: 180px;
+    height: 60px;
+    background-color: black;
+    position: absolute;
+    left: 105px;
+    bottom: 110px
+    }
+    .r5 {
+      width: 180px;
+    height: 60px;
+    background-color: black;
+    position: absolute;
+    left: 105px;
+    bottom: 280px;
+    }
+    .r6 {
+    width: 180px;
+    height: 60px;
+    background-color: black;
+    position: absolute;
+    left: 105px;
+    bottom: 450px;
+    }
+  </style>
+</head>
+<body>
+  <div class="c1"></div>
+  <hr style="top: auto; position: relative; border: 1px dashed red;">
+  <div class="c2"></div>
+  <hr style="top: auto; position: relative; border: 1px dashed red;">
+  <div class="c3"></div>
+  <hr style="top: auto; position: relative; border: 1px dashed red;">
+  <div class="c4">
+    <div class="r1"></div>
+    <div class="r2"></div>
+    <div class="r3"></div>
+    <div class="r4"></div>
+    <div class="r5"></div>
+    <div class="r6"></div>
+  </div>
+</body>
+</html>
